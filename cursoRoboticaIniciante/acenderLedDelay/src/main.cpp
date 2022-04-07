@@ -6,10 +6,14 @@ void setup() {
 
 void loop() {
   digitalWrite(12, HIGH);
+  delay(100);
 
-  delay(1000);
+  digitalWrite(13, HIGH);
+  delay(100);
 
   digitalWrite(12, LOW);
+  delay(100);
 
-  delay(1000);
+  digitalWrite(13, HIGH);
+  delay(100);
 }
