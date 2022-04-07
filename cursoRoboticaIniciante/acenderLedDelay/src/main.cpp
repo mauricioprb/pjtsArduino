@@ -12,13 +12,15 @@
 #include <Arduino.h>
 
 void setup(){
-  pinMode(12, OUTPUT);
+  pinMode(12, OUTPUT); // Declara a saída 12 como saída do led
 }
 
 void loop(){
-  digitalWrite(12, HIGH);
-  delay(100);
+  digitalWrite(12, HIGH); // Liga a saída 12
+  delay(1000); // Espera 1s
 
-  digitalWrite(12, LOW);
-  delay(100);
+  digitalWrite(12, LOW); // Desliga saída 12
+  delay(1000); // Espera 1s 
+
+  // Recomeça o ciclo
 }
