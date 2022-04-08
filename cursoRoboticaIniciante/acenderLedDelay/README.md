@@ -6,4 +6,4 @@
 * 3 resistores.
 
 <h3>Imagem do projeto:</h3>
-<img src="semaforo.png" width="600">
+<img src="acenderled.png" width="600">
