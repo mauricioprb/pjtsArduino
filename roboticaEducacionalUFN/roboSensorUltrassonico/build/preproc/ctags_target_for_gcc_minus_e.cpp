@@ -35,7 +35,7 @@ void setup() {
 
     void loop() {
         // Convertendo a distância em CM e lendo o sensor
-        distanciaCentimetros = sensorUltrassonico.convert(sensorUltrassonico.timing(), Ultrasonic::CM);
+        distanciaCentimetros = sensorUltrassonico.convert(sensorUltrassonico.timing(), Ultrasonic::28);
 
         Serial.print(distanciaCentimetros);
         Serial.println(" cm");

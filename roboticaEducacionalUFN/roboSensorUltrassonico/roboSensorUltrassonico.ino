@@ -7,15 +7,15 @@ long microSegundos = 0; // Armazenar o valor do tempo da reflexão do som reflet
 float distanciaCentimetros = 0; // Armazenar o valor da distância a ser convertido por uma função da própria bilbioteca do sensor
 
 // Definir os pinos dos motores
-#define motorEsquerdo1 4
-#define motorEsquerdo2 5
+int motorEsquerdo1 = 4;
+int motorEsquerdo2 =  5;
 
-#define motorDireito1 7
-#define motorDireito2 8
+int motorDireito1 = 7;
+int motorDireito2 = 8;
 
 // Definir os pinos para controle da velocidade
-#define velocidadeMotorEsquerdo 3
-#define velocidadeMotorDireito 6
+int velocidadeMotorEsquerdo = 3;
+int velocidadeMotorDireito = 6;
 
 // Escolha da velocidade dos motores
 int valorEsquerdo = 180;
@@ -63,7 +63,7 @@ void setup() {
             digitalWrite(motorEsquerdo1, LOW);
             digitalWrite(motorEsquerdo2, HIGH);
 
-            delay(200);  // Tempo que ficará indo para o lado direito
+            delay(200); // Tempo que ficará indo para o lado direito
         }
 
         else { // Se não, ou seja, se a distância for maior que 40 centimetros
