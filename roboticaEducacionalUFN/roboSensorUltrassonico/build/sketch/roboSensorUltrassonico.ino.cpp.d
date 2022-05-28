@@ -1,5 +1,5 @@
-e:\Documentos\Repositorios\pjtsArduino\roboSensorUltrassonico\build\sketch\roboSensorUltrassonico.ino.cpp.o: \
- e:\Documentos\Repositorios\pjtsArduino\roboSensorUltrassonico\build\sketch\roboSensorUltrassonico.ino.cpp \
+e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\sketch\roboSensorUltrassonico.ino.cpp.o: \
+ e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\sketch\roboSensorUltrassonico.ino.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/binary.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/WCharacter.h \
@@ -10,4 +10,5 @@ e:\Documentos\Repositorios\pjtsArduino\roboSensorUltrassonico\build\sketch\roboS
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Printable.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino/Arduino.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h \
+ e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\sketch\Ultrasonic.h

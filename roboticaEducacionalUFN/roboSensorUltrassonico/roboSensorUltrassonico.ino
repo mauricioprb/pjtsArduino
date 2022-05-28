@@ -1,4 +1,4 @@
-#include <Ultrasonic.h>
+#include "Ultrasonic.h"
 
 // Pinos Trigger - 9 - e Echo - 10
 Ultrasonic sensorUltrassonico(9, 10);
@@ -20,7 +20,6 @@ float distanciaCentimetros = 0; // Armazenar o valor da distância a ser convert
 // Escolha da velocidade dos motores
 int valorEsquerdo = 180;
 int valorDireito = 180;
-
 
 void setup() {
     // Definir os motores como saídas

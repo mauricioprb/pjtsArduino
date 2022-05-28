@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#line 1 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
-#include <HCSR04.h>
+#line 1 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+#include "Ultrasonic.h"
 
 // Pinos Trigger - 9 - e Echo - 10
 Ultrasonic sensorUltrassonico(9, 10);
@@ -23,12 +23,11 @@ float distanciaCentimetros = 0; // Armazenar o valor da distância a ser convert
 int valorEsquerdo = 180;
 int valorDireito = 180;
 
-
-#line 25 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+#line 24 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
 void setup();
-#line 36 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+#line 35 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
 void loop();
-#line 25 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+#line 24 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
 void setup() {
     // Definir os motores como saídas
     pinMode(motorDireito1, OUTPUT);

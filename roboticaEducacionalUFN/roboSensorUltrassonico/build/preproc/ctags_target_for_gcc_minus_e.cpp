@@ -1,5 +1,5 @@
-# 1 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
-# 2 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\roboSensorUltrassonico.ino" 2
+# 1 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+# 2 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino" 2
 
 // Pinos Trigger - 9 - e Echo - 10
 Ultrasonic sensorUltrassonico(9, 10);
@@ -21,7 +21,6 @@ float distanciaCentimetros = 0; // Armazenar o valor da distância a ser convert
 // Escolha da velocidade dos motores
 int valorEsquerdo = 180;
 int valorDireito = 180;
-
 
 void setup() {
     // Definir os motores como saídas
