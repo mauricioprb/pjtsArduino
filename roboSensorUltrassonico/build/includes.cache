@@ -1,0 +1,27 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\build\\sketch\\roboSensorUltrassonico.ino.cpp",
+    "Include": "HCSR04.h",
+    "Includepath": "C:\\Users\\mauricio\\Documents\\Arduino\\libraries\\HC-SR04\\src"
+  },
+  {
+    "Sourcefile": "e:\\Documentos\\Repositorios\\pjtsArduino\\roboSensorUltrassonico\\build\\sketch\\roboSensorUltrassonico.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mauricio\\Documents\\Arduino\\libraries\\HC-SR04\\src\\HCSR04.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
