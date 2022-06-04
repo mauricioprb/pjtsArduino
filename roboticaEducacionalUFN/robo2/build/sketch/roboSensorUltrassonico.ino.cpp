@@ -12,11 +12,6 @@ int motorDireitoFrente = 10;
 
 int distancia;
 
-#line 13 "/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/robo2/roboSensorUltrassonico.ino"
-void setup();
-#line 23 "/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/robo2/roboSensorUltrassonico.ino"
-void loop();
-#line 13 "/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/robo2/roboSensorUltrassonico.ino"
 void setup() {
 	pinMode(motorEsquerdoFrente, OUTPUT);
     pinMode(motorEsquerdoTras, OUTPUT);
@@ -30,14 +25,7 @@ void setup() {
 void loop() {
     distancia = sensor.distanceRead();
 
-    digitalWrite(motorEsquerdoFrente, HIGH);
-    digitalWrite(motorEsquerdoTras, LOW);
-
-    digitalWrite(motorDireitoFrente, HIGH);
-    digitalWrite(motorDireitoTras, LOW);
-
     if(distancia < 20) {
-
         digitalWrite(motorEsquerdoFrente, LOW);
         digitalWrite(motorEsquerdoTras, HIGH);
 
@@ -53,5 +41,13 @@ void loop() {
         digitalWrite(motorDireitoTras, LOW);
 
         delay(200);
+    }
+
+    else {
+        digitalWrite(motorEsquerdoFrente, HIGH);
+        digitalWrite(motorEsquerdoTras, LOW);
+
+        digitalWrite(motorDireitoFrente, HIGH);
+        digitalWrite(motorDireitoTras, LOW);    
     }
 }
