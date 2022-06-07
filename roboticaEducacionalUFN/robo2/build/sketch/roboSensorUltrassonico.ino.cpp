@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#line 1 "/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/robo2/roboSensorUltrassonico.ino"
+#line 1 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
 #include <Ultrasonic.h>
 
 Ultrasonic sensor(6, 7);
@@ -10,8 +10,13 @@ int motorEsquerdoTras = 12;
 int motorDireitoTras = 11;
 int motorDireitoFrente = 10;
 
-int distancia;
+int distancia = 0;
 
+#line 13 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
+void setup();
+#line 23 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
+void loop();
+#line 13 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
 void setup() {
 	pinMode(motorEsquerdoFrente, OUTPUT);
     pinMode(motorEsquerdoTras, OUTPUT);
@@ -23,7 +28,7 @@ void setup() {
 }
 
 void loop() {
-    distancia = sensor.distanceRead();
+    distancia = sensor.read();
 
     if(distancia < 20) {
         digitalWrite(motorEsquerdoFrente, LOW);

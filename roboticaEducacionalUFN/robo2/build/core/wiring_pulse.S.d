@@ -1,2 +1,2 @@
-/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/robo2/build/core/wiring_pulse.S.o: \
- /home/mauricio/Documentos/arduino-1.8.19/hardware/arduino/avr/cores/arduino/wiring_pulse.S
+e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\robo2\build\core\wiring_pulse.S.o: \
+ C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\wiring_pulse.S

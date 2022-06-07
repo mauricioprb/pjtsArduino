@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Arduino",
-            "compilerPath": "/home/mauricio/Documentos/arduino-1.8.19/hardware/tools/avr/bin/avr-g++",
+            "compilerPath": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\bin\\avr-g++",
             "compilerArgs": [
                 "-std=gnu++11",
                 "-fpermissive",
@@ -15,15 +15,15 @@
             ],
             "intelliSenseMode": "gcc-x64",
             "includePath": [
-                "/home/mauricio/Documentos/arduino-1.8.19/hardware/arduino/avr/cores/arduino",
-                "/home/mauricio/Documentos/arduino-1.8.19/hardware/arduino/avr/variants/standard",
-                "/home/mauricio/Arduino/libraries/Ultrasonic/src",
-                "/home/mauricio/Documentos/arduino-1.8.19/hardware/tools/avr/lib/gcc/avr/7.3.0/include",
-                "/home/mauricio/Documentos/arduino-1.8.19/hardware/tools/avr/lib/gcc/avr/7.3.0/include-fixed",
-                "/home/mauricio/Documentos/arduino-1.8.19/hardware/tools/avr/avr/include"
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard",
+                "C:\\Users\\mauricio\\Documents\\Arduino\\libraries\\Ultrasonic\\src",
+                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include",
+                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include-fixed",
+                "c:\\program files (x86)\\arduino\\hardware\\tools\\avr\\avr\\include"
             ],
             "forcedInclude": [
-                "/home/mauricio/Documentos/arduino-1.8.19/hardware/arduino/avr/cores/arduino/Arduino.h"
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
             ],
             "cStandard": "c11",
             "cppStandard": "c++11",
