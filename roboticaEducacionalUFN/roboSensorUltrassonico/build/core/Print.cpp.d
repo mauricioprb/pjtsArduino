@@ -1,4 +1,4 @@
-e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\robo2\build\core\Print.cpp.o: \
+e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\core\Print.cpp.o: \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Print.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\binary.h \

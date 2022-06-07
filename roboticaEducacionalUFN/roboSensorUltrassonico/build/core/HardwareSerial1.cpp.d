@@ -1,4 +1,4 @@
-e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\robo2\build\core\HardwareSerial1.cpp.o: \
+e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\core\HardwareSerial1.cpp.o: \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\HardwareSerial1.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\binary.h \

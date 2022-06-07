@@ -1,2 +1,2 @@
-e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\robo2\build\core\abi.cpp.o: \
+e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\core\abi.cpp.o: \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\abi.cpp

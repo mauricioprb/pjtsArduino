@@ -1,3 +1,3 @@
-e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\robo2\build\core\WString.cpp.o: \
+e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\core\WString.cpp.o: \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\WString.cpp \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\WString.h

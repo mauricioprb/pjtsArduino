@@ -1,4 +1,4 @@
-e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\robo2\build\core\wiring_shift.c.o: \
+e:\Documentos\Repositorios\pjtsArduino\roboticaEducacionalUFN\roboSensorUltrassonico\build\core\wiring_shift.c.o: \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\wiring_shift.c \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\wiring_private.h \
  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h \
