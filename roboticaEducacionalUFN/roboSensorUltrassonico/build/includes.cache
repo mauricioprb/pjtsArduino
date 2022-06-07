@@ -10,12 +10,12 @@
     "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
   },
   {
-    "Sourcefile": "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\build\\sketch\\roboSensorUltrassonico.ino.cpp",
+    "Sourcefile": "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\build\\sketch\\roboSensorUltrassonico.ino.cpp",
     "Include": "Ultrasonic.h",
     "Includepath": "C:\\Users\\mauricio\\Documents\\Arduino\\libraries\\Ultrasonic\\src"
   },
   {
-    "Sourcefile": "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\build\\sketch\\roboSensorUltrassonico.ino.cpp",
+    "Sourcefile": "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\build\\sketch\\roboSensorUltrassonico.ino.cpp",
     "Include": "",
     "Includepath": null
   },

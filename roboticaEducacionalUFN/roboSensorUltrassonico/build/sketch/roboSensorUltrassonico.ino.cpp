@@ -1,91 +1,58 @@
 #include <Arduino.h>
-#line 1 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
-#include "Ultrasonic.h"
+#line 1 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
+#include <Ultrasonic.h>
 
-// Pinos Trigger - 9 - e Echo - 10
-Ultrasonic sensorUltrassonico(9, 10);
+Ultrasonic sensor(6, 7);
 
-long microSegundos = 0; // Armazenar o valor do tempo da reflexão do som refletido pelo objeto fornecido pela biblioteca do sensor
-float distanciaCentimetros = 0; // Armazenar o valor da distância a ser convertido por uma função da própria bilbioteca do sensor
+int motorEsquerdoFrente = 13;
+int motorEsquerdoTras = 12;
 
-// Definir os pinos dos motores
-int motorEsquerdo1 = 4;
-int motorEsquerdo2 =  5;
+int motorDireitoTras = 11;
+int motorDireitoFrente = 10;
 
-int motorDireito1 = 7;
-int motorDireito2 = 8;
+int distancia = 0;
 
-// Definir os pinos para controle da velocidade
-int velocidadeMotorEsquerdo = 3;
-int velocidadeMotorDireito = 6;
-
-// Escolha da velocidade dos motores
-int valorEsquerdo = 180;
-int valorDireito = 180;
-
-#line 24 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+#line 13 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
 void setup();
-#line 35 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+#line 23 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
 void loop();
-#line 24 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\roboSensorUltrassonico\\roboSensorUltrassonico.ino"
+#line 13 "e:\\Documentos\\Repositorios\\pjtsArduino\\roboticaEducacionalUFN\\robo2\\roboSensorUltrassonico.ino"
 void setup() {
-    // Definir os motores como saídas
-    pinMode(motorDireito1, OUTPUT);
-    pinMode(motorDireito2, OUTPUT);
-    pinMode(motorEsquerdo1, OUTPUT);
-    pinMode(motorEsquerdo2, OUTPUT);
+	pinMode(motorEsquerdoFrente, OUTPUT);
+    pinMode(motorEsquerdoTras, OUTPUT);
+    pinMode(motorDireitoTras, OUTPUT);
+    pinMode(motorDireitoFrente, OUTPUT);
 
-    Serial.begin(115200); // Inicia a comunicação seria com velocidade de 115200 bits por segundo
-    delay(3000); // Tempo de espera para inicialização (para dar tempo de por o robô no chão)
+    Serial.begin(9600);
+    delay(3000);
+}
+
+void loop() {
+    distancia = sensor.read();
+
+    if(distancia < 20) {
+        digitalWrite(motorEsquerdoFrente, LOW);
+        digitalWrite(motorEsquerdoTras, HIGH);
+
+        digitalWrite(motorDireitoFrente, LOW);
+        digitalWrite(motorDireitoTras, HIGH);
+
+        delay(500);
+
+        digitalWrite(motorEsquerdoFrente, LOW);
+        digitalWrite(motorEsquerdoTras, HIGH);
+
+        digitalWrite(motorDireitoFrente, LOW);
+        digitalWrite(motorDireitoTras, LOW);
+
+        delay(200);
     }
 
-    void loop() {
-        // Convertendo a distância em CM e lendo o sensor
-        distanciaCentimetros = sensorUltrassonico.convert(sensorUltrassonico.timing(), Ultrasonic::CM);
-        
-        Serial.print(distanciaCentimetros);
-        Serial.println(" cm");
+    else {
+        digitalWrite(motorEsquerdoFrente, HIGH);
+        digitalWrite(motorEsquerdoTras, LOW);
 
-        if (distanciaCentimetros <= 40) { // Se a distância lida pelo sensor for menor ou igual que 40 centimetros
-            //Velocidade motor lado esquerdo
-            analogWrite(velocidadeMotorDireito, valorEsquerdo);
-
-            //Velocidade motor lado direito
-            analogWrite(velocidadeMotorEsquerdo, valorDireito);
-
-            // Motor lado esquerdo para trás
-            digitalWrite(motorDireito1, LOW);
-            digitalWrite(motorDireito2, HIGH);
-
-            // Motor lado direito para trás
-            digitalWrite(motorEsquerdo1, LOW);
-            digitalWrite(motorEsquerdo2, HIGH);
-            delay(700); // Tempo que ficará indo para trás
-
-            // Motor lado esquerdo para frente
-            digitalWrite(motorDireito1, HIGH);
-            digitalWrite(motorDireito2, LOW);
-
-            // Motor lado direito para trás
-            digitalWrite(motorEsquerdo1, LOW);
-            digitalWrite(motorEsquerdo2, HIGH);
-
-            delay(200); // Tempo que ficará indo para o lado direito
-        }
-
-        else { // Se não, ou seja, se a distância for maior que 40 centimetros
-            //Velocidade motor lado esquerdo
-            analogWrite(velocidadeMotorDireito, valorEsquerdo);
-        
-            //Velocidade motor lado direito
-            analogWrite(velocidadeMotorEsquerdo, valorDireito);
-        
-            // Motor lado esquerdo para frente
-            digitalWrite(motorDireito1, HIGH);
-            digitalWrite(motorDireito2, LOW);
-        
-            // Motor lado direito para frente
-            digitalWrite(motorEsquerdo1, HIGH);
-            digitalWrite(motorEsquerdo2, LOW);
-        }
+        digitalWrite(motorDireitoFrente, HIGH);
+        digitalWrite(motorDireitoTras, LOW);    
+    }
 }

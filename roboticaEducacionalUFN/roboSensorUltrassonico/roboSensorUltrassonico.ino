@@ -1,84 +1,67 @@
-#include "Ultrasonic.h"
+#include <Ultrasonic.h>
 
-// Pinos Trigger - 9 - e Echo - 10
-Ultrasonic sensorUltrassonico(9, 10);
+// Declarar os pinos TRIGGER E ECHO
+int TRIGGER = 6;
+int ECHO = 7;
 
-long microSegundos = 0; // Armazenar o valor do tempo da reflexão do som refletido pelo objeto fornecido pela biblioteca do sensor
-float distanciaCentimetros = 0; // Armazenar o valor da distância a ser convertido por uma função da própria bilbioteca do sensor
+// Definindo uma função para os pinos
+Ultrasonic sensor(TRIGGER, ECHO);
 
-// Definir os pinos dos motores
-int motorEsquerdo1 = 4;
-int motorEsquerdo2 =  5;
+// Declarando variáveis para os pinos dos motores
+int motorEsquerdoFrente = 13;
+int motorEsquerdoTras = 12;
 
-int motorDireito1 = 7;
-int motorDireito2 = 8;
+int motorDireitoTras = 11;
+int motorDireitoFrente = 10;
 
-// Definir os pinos para controle da velocidade
-int velocidadeMotorEsquerdo = 3;
-int velocidadeMotorDireito = 6;
-
-// Escolha da velocidade dos motores
-int valorEsquerdo = 180;
-int valorDireito = 180;
+// Variável para medir a distância (começando em zero)
+int distancia = 0;
 
 void setup() {
-    // Definir os motores como saídas
-    pinMode(motorDireito1, OUTPUT);
-    pinMode(motorDireito2, OUTPUT);
-    pinMode(motorEsquerdo1, OUTPUT);
-    pinMode(motorEsquerdo2, OUTPUT);
+    // Definindo todos os motores como saídas
+	pinMode(motorEsquerdoFrente, OUTPUT);
+    pinMode(motorEsquerdoTras, OUTPUT);
+    pinMode(motorDireitoTras, OUTPUT);
+    pinMode(motorDireitoFrente, OUTPUT);
 
-    Serial.begin(115200); // Inicia a comunicação seria com velocidade de 115200 bits por segundo
-    delay(3000); // Tempo de espera para inicialização (para dar tempo de por o robô no chão)
+    // Delay para dar tempo de colocar o robô no chão
+    delay(3000);
+}
+
+void loop() {
+    // Variável para ler a que distância está o sensor no momento;
+    distancia = sensor.read();
+
+    // Se distância menor que 20cm 
+    if(distancia < 20) {
+        // Comandos para dar ré
+        digitalWrite(motorEsquerdoFrente, LOW); // Desliga a rotação do motor esquerdo para frente
+        digitalWrite(motorEsquerdoTras, HIGH); // Liga a rotação traseira do motor esquerdo
+
+        digitalWrite(motorDireitoFrente, LOW); // Desliga a rotação do motor direito para frente
+        digitalWrite(motorDireitoTras, HIGH); // Liga a rotação traseira do motor direito
+
+        // Robô da ré durante 0.5s
+        delay(500);
+
+        // Motor irá dar ré para a esquerda
+        digitalWrite(motorEsquerdoFrente, LOW); 
+        digitalWrite(motorEsquerdoTras, HIGH);
+
+        digitalWrite(motorDireitoFrente, LOW);
+        digitalWrite(motorDireitoTras, LOW);
+
+        // Faz a ação durante 0.2s
+        delay(200);
     }
 
-    void loop() {
-        // Convertendo a distância em CM e lendo o sensor
-        distanciaCentimetros = sensorUltrassonico.convert(sensorUltrassonico.timing(), Ultrasonic::CM);
-        
-        Serial.print(distanciaCentimetros);
-        Serial.println(" cm");
+    // Se a distância for superior a 20cm executará os comandos abaixo
+    else {
+        // Ligar os motores para frente equanto a distância não for inferior a 20cm
+        digitalWrite(motorEsquerdoFrente, HIGH);
+        digitalWrite(motorEsquerdoTras, LOW);
 
-        if (distanciaCentimetros <= 40) { // Se a distância lida pelo sensor for menor ou igual que 40 centimetros
-            //Velocidade motor lado esquerdo
-            analogWrite(velocidadeMotorDireito, valorEsquerdo);
-
-            //Velocidade motor lado direito
-            analogWrite(velocidadeMotorEsquerdo, valorDireito);
-
-            // Motor lado esquerdo para trás
-            digitalWrite(motorDireito1, LOW);
-            digitalWrite(motorDireito2, HIGH);
-
-            // Motor lado direito para trás
-            digitalWrite(motorEsquerdo1, LOW);
-            digitalWrite(motorEsquerdo2, HIGH);
-            delay(700); // Tempo que ficará indo para trás
-
-            // Motor lado esquerdo para frente
-            digitalWrite(motorDireito1, HIGH);
-            digitalWrite(motorDireito2, LOW);
-
-            // Motor lado direito para trás
-            digitalWrite(motorEsquerdo1, LOW);
-            digitalWrite(motorEsquerdo2, HIGH);
-
-            delay(200); // Tempo que ficará indo para o lado direito
-        }
-
-        else { // Se não, ou seja, se a distância for maior que 40 centimetros
-            //Velocidade motor lado esquerdo
-            analogWrite(velocidadeMotorDireito, valorEsquerdo);
-        
-            //Velocidade motor lado direito
-            analogWrite(velocidadeMotorEsquerdo, valorDireito);
-        
-            // Motor lado esquerdo para frente
-            digitalWrite(motorDireito1, HIGH);
-            digitalWrite(motorDireito2, LOW);
-        
-            // Motor lado direito para frente
-            digitalWrite(motorEsquerdo1, HIGH);
-            digitalWrite(motorEsquerdo2, LOW);
-        }
+        digitalWrite(motorDireitoFrente, HIGH);
+        digitalWrite(motorDireitoTras, LOW);    
+    }
 }
