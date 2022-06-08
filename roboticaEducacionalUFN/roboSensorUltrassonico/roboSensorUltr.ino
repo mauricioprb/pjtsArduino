@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
     // Variável para ler a que distância está o sensor no momento;
-    distancia = sensor.read();
+    distancia = sensor.distanceRead();
 
     // Se distância menor que 20cm 
     if(distancia < 20) {
