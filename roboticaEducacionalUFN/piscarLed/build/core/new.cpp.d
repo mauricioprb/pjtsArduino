@@ -1,2 +1,2 @@
-e:\Documentos\Repositorios\pjtsArduino\piscarLed\build\core\new.cpp.o: \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\new.cpp
+/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/piscarLed/build/core/new.cpp.o: \
+ /home/mauricio/arduino-1.8.19/hardware/arduino/avr/cores/arduino/new.cpp

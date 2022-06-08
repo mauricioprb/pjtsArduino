@@ -2,15 +2,15 @@
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+    "Includepath": "/home/mauricio/arduino-1.8.19/hardware/arduino/avr/cores/arduino"
   },
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
+    "Includepath": "/home/mauricio/arduino-1.8.19/hardware/arduino/avr/variants/standard"
   },
   {
-    "Sourcefile": "e:\\Documentos\\Repositorios\\pjtsArduino\\piscarLed\\build\\sketch\\piscarLed.ino.cpp",
+    "Sourcefile": "/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/piscarLed/build/sketch/piscarLed.ino.cpp",
     "Include": "",
     "Includepath": null
   }

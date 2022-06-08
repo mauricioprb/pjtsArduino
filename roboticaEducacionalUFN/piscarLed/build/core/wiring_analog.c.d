@@ -1,6 +1,6 @@
-e:\Documentos\Repositorios\pjtsArduino\piscarLed\build\core\wiring_analog.c.o: \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\wiring_analog.c \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\wiring_private.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\Arduino.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\binary.h \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h
+/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/piscarLed/build/core/wiring_analog.c.o: \
+ /home/mauricio/arduino-1.8.19/hardware/arduino/avr/cores/arduino/wiring_analog.c \
+ /home/mauricio/arduino-1.8.19/hardware/arduino/avr/cores/arduino/wiring_private.h \
+ /home/mauricio/arduino-1.8.19/hardware/arduino/avr/cores/arduino/Arduino.h \
+ /home/mauricio/arduino-1.8.19/hardware/arduino/avr/cores/arduino/binary.h \
+ /home/mauricio/arduino-1.8.19/hardware/arduino/avr/variants/standard/pins_arduino.h

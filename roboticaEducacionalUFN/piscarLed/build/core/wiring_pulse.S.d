@@ -1,2 +1,2 @@
-e:\Documentos\Repositorios\pjtsArduino\piscarLed\build\core\wiring_pulse.S.o: \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\avr\cores\arduino\wiring_pulse.S
+/home/mauricio/Documentos/Repositorios/pjtsArduino/roboticaEducacionalUFN/piscarLed/build/core/wiring_pulse.S.o: \
+ /home/mauricio/arduino-1.8.19/hardware/arduino/avr/cores/arduino/wiring_pulse.S
