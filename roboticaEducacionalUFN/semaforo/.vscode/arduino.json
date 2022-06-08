@@ -1,5 +1,0 @@
-{
-    "sketch": "semaforo.ino",
-    "output": "build",
-    "board": "arduino:avr:uno"
-}

@@ -1,5 +1,0 @@
-{
-    "sketch": "acender2Leds2Botoes.ino",
-    "output": "build",
-    "board": "arduino:avr:uno"
-}
