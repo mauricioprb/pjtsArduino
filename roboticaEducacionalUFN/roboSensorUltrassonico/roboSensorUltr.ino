@@ -19,7 +19,7 @@ int distancia = 0;
 
 void setup() {
     // Definindo todos os motores como saídas
-	pinMode(motorEsquerdoFrente, OUTPUT);
+    pinMode(motorEsquerdoFrente, OUTPUT);
     pinMode(motorEsquerdoTras, OUTPUT);
     pinMode(motorDireitoTras, OUTPUT);
     pinMode(motorDireitoFrente, OUTPUT);
@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
     // Variável para ler a que distância está o sensor no momento;
-    distancia = sensor.distanceRead();
+    distancia = sensor.read();
 
     // Se distância menor que 20cm 
     if(distancia < 20) {
