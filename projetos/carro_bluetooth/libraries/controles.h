@@ -8,7 +8,7 @@ class Controles {
         Motor *re;
         Direcao *direcao;
   
-    // Defindo valores para quanto o servo deve girar
+    // Definindo valores para quanto o servo deve girar
     public:
         int direita = 5;
         int esquerda = 180;
