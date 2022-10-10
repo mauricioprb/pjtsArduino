@@ -24,10 +24,11 @@ void loop() {
   float potencia = analogRead(potenciometro);
 
   float v = (m * (potencia - potMin)) + vMin;
-  Serial.print(v);
+  Serial.println(v);
 
-  lcd.setCursor(3, 0);
+  lcd.setCursor(5, 0);
   lcd.print(v);
+  lcd.print("v");
   lcd.setCursor(3, 1);
   delay(1000);
 }
